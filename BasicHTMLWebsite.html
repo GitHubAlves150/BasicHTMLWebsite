@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iansui&family=Playpen+Sans:wght@100..800&family=Smooch+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>BasicWebsite</title>
+    <style>
+        /*
+        .playpen-sans-<uniquifier> {
+            font-family: "Playpen Sans", cursive;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }*/
+        h1 {
+            font-family: "Playpen Sans", cursive;
+
+        }
+
+        header {
+            border: 2px solid black;
+
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        header>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header>div>nav>a {
+            /*border: 2px solid black;*/
+            background-color: rgb(188, 185, 185);
+            color: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 10px;
+            text-decoration: none;
+            text-align: center;
+            flex-flow: row wrap;
+        }
+
+        header>p.FrontDEV {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 0px;
+            font-family: "Playpen Sans", cursive;
+
+        }
+
+        header>p.subtitle {
+            border: 1px solid rgb(14, 13, 13);
+            color: rgb(175, 173, 173);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        header>div.painel {
+            border: 2px solid black;
+        }
+
+        header>h1 {
+            border: 2px solid black;
+            flex: 0 0 200px;
+        }
+
+        header>div>nav>a:hover {
+            color: rgb(253, 249, 249);
+            background-color: black;
+        }
+
+        table.quadro,
+        th {
+            border: 2px solid rgb(8, 7, 7);
+            margin: 4px;
+            width: 900px;
+            flex-flow: row wrap;
+        }
+
+        h1 {
+            color: rgb(29, 29, 30);
+            font-family: "Smooch Sans", sans-serif;            font-size: 25px;
+
+        }
+
+        footer {
+            border: 3px solid rgb(24, 24, 24);
+            text-align: center;
+            /*centraliza todos os elementos inline dentro do footer*/
+        }
+
+        footer>div.conteiner {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        footer>div>div.box {
+            border: 1px solid black;
+            background-color: rgb(191, 189, 189);
+            padding: 10px;
+            border-radius: 10px;
+            flex-flow: row wrap;
+            align-items: center;
+            padding: 2px 12px 2px 12px;
+
+        }
+
+        footer>em {
+            background-color: rgb(85, 105, 105);
+            display: block;
+            /*Transforma o elemento inline em block-level para permitir a centralização via mergens*/
+            margin: auto;
+            max-width: 100%;
+        }
+    </style>
+    </title>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <h1>Lucas Alves</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Articles</a>
+                <a href="#">Contect</a>
+            </nav>
+        </div>
+
+        <p class="FrontDEV">
+            Front Developer
+        </p>
+        <p class="subtitle">
+            html only with proper layout, no styling
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <th class="quadro">
+                        <h1>Projects</h1>
+                        <h2>HTML Only Portifolio</h2>
+                        <ul>
+                            <li>Calculator</li>
+                            <li>Quiz App</li>
+                            <li>CountDown Timer</li>
+                            <li>Product Upcoming Page</li>
+                        </ul>
+                    </th>
+                    <th class="quadro">
+                        <h1>Work Experience</h1>
+                        <h2>Roadmap.sh</h2>
+                        <h3>Solved all the frontend projects</h3>
+                        <a href="https://github.com/GitHubAlves150">visit my GitHub Profile</a>
+                        <h2>OpenSource Work</h2>
+                        <p>
+                            Contribuited to 50 OpenSource projects. Made my own projects with 200 GitHub Stars
+                        </p>
+                        <a href="https://github.com/GitHubAlves150">visit my GitHub Profile</a>
+
+                    </th>
+                    <th class="quadro">
+                        <h1>Education</h1>
+                        <p>
+                            Graduated with 3.76 out os 4 CGPA.Won Acme Hackathon.
+                            Organized 30 sessions. <br>
+                            Courses i took:
+                        <ul>
+                            <li>
+                                Object Oriented Programming
+                                Data Structres and Algorithms
+                                Web Enginnering
+                                Artificial intelligence
+                                Human Computer Integration
+                                Computer graphics
+                                Databases Managements Systems
+                                Distributed Database Systems
+                                Discreet Mathematics
+                            </li>
+                        </ul>
+
+                        </p>
+                    </th>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <h1>Reviews from my Teachers</h1>
+        <div class="conteiner">
+            <div class="box">
+                <p>
+                    Jhon doe was a briliant student; always stood out with his assignments. <br>
+                <h6>Jane Doe</h6> <br>
+                <h6>Assistence Professor</h6>
+                </p>
+            </div>
+
+
+            <div class="box">
+                <p>
+                    Jhon doe was a briliant student; always stood out with his assignments. <br>
+                <h6>Jane Doe</h6> <br>
+                <h6>Assistence Professor</h6>
+                </p>
+            </div>
+            <div class="box">
+                <p>
+                    Jhon doe was a briliant student; always stood out with his assignments. <br>
+                <h6>Jane Doe</h6> <br>
+                <h6>Assistence Professor</h6>
+                </p>
+            </div>
+        </div>
+        <em>@lucasalves</em>
+    </footer>
+</body>
+
+</html>
